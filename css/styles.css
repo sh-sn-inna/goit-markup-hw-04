@@ -150,7 +150,7 @@ font-style: normal;
 .contact-header:hover .contact-icon,
 .contact-header:focus .contact-icon,
 .tel-header:hover .contact-icon,
-.tel-header:focus .contanct-icon {
+.tel-header:focus .contact-icon {
     fill: var(--accent-color);
 }
 
@@ -218,6 +218,7 @@ font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-contact-color);
+    cursor: pointer;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -611,6 +612,7 @@ font-style: normal;
     background-color: var(--background-team-color);
     color: var(--primary-text-color);
     padding: 10px 32px;
+    border: 1px solid var(--social-icon-color);
     border-radius: 4px;
     border-style: none;
 }
@@ -619,7 +621,10 @@ font-style: normal;
 .filter-btm:focus {
     color: var(--primary-color);
     background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--accent-color);
+    outline: none;
     cursor: pointer;
 }
 
@@ -643,12 +648,15 @@ font-style: normal;
     margin-top: 30px;
 }
 
-.projects-item:hover,
-.projects-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+.projects-link {
+    display: block;
 }
 
+.projects-link:hover,
+.projects-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: none;
+}
 
 .projects-list-content-wrapper {
     padding: 24px 20px;
